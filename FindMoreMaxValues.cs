@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace Test_Maximum_Using_Generics
 {
-    internal class FindMoreMaxValues
+    internal class FindMoreMaxValues<T> where T : IComparable<T>
     {
         // Extend the max method to take more then three parameters
-        public static T FindMaximum<T>(params T[] values) where T : IComparable<T>
+        T max { get; set; }
+        public T FindMaximum(params T[] values)
         {
-            T max = values[0];
+            max = values[0];
 
-            for(int i = 1; i < values.Length; i++)
+            for (int i = 1; i < values.Length; i++)
             {
                 if (values[i].CompareTo(max) > 0)
                 {
@@ -24,5 +25,11 @@ namespace Test_Maximum_Using_Generics
 
             return max;
         }
+
+        public void printMax()
+        {
+            Console.WriteLine("The maximum value is " + max);
+        }
+
     }
 }

@@ -97,14 +97,17 @@ namespace Test_Maximum_Using_Generics
 
                     case 6:
 
-                        int maxInt = FindMoreMaxValues.FindMaximum(12, 23, 34, 45, 56, 67);
-                        Console.WriteLine("Maximum value is {0}", maxInt);
+                        FindMoreMaxValues<int> intMax = new FindMoreMaxValues<int>();
+                        intMax.FindMaximum(12, 23, 34, 45, 56, 67);
+                        intMax.printMax();
 
-                        float maxFloat = FindMoreMaxValues.FindMaximum(12.34f, 36.46f, 89.12f, 10.001f, 222.123f, 678.876f);
-                        Console.WriteLine("Maximum value is {0}", maxFloat);
+                        FindMoreMaxValues<float> floatMax = new FindMoreMaxValues<float>();
+                        floatMax.FindMaximum(12.34f, 36.46f, 89.12f, 10.001f, 222.123f, 678.876f);
+                        floatMax.printMax();
 
-                        string maxString = FindMoreMaxValues.FindMaximum("Generics", "ArrayList", "Stack", "Queue", "List", "Array");
-                        Console.WriteLine("Maximum value is {0}", maxString);
+                        FindMoreMaxValues<string> stringMax = new FindMoreMaxValues<string>();
+                        stringMax.FindMaximum("Generics", "ArrayList", "Stack", "Queue", "List", "Array");
+                        stringMax.printMax();
                         break;
 
                     case 0:
