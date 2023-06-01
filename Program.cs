@@ -80,6 +80,20 @@ namespace Test_Maximum_Using_Generics
                         Console.WriteLine("{0} is the maximum string", MaxValue3);
                         break;
 
+                    case 5:
+                        // TC 1.1 - Max int from among three integers
+                        int MaxValue4 = MaxGenericClass<int>.MaxValue(43456, 456876, 367654336);
+                        Console.WriteLine("{0} is the maximum number", MaxValue4);
+
+                        // TC 1.2 - Max float from among three float numbers
+                        float MaxValue5 = MaxGenericClass<float>.MaxValue(234.567f, 5986.0978f, 1254.6758f);
+                        Console.WriteLine("{0} is the maximum float", MaxValue5);
+
+                        // TC 1.3 -  Max string from among three strings
+                        string MaxValue6 = MaxGenericClass<string>.MaxValue("Programming", "Oriented", "Object");
+                        Console.WriteLine("{0} is the maximum string", MaxValue6);
+                        break;
+
                     case 0:
                         Environment.Exit(0);
                         break;
