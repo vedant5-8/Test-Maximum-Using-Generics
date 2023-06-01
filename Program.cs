@@ -49,6 +49,20 @@ namespace Test_Maximum_Using_Generics
                         Console.WriteLine("{0} is the maximum number at third position", maxThirdFloat);
                         break;
 
+                    case 3:
+                        // TC 1.1 - Max string at first position
+                        string maxFirstString = FindMaxString.MaxString("Programming", "Oriented", "Object");
+                        Console.WriteLine("{0} is the maximum number at first position", maxFirstString);
+
+                        // TC 1.2 - Max string at second position
+                        string maxSecondString = FindMaxString.MaxString("Inheritance", "Interface", "Abstract");
+                        Console.WriteLine("{0} is the maximum number at second position", maxSecondString);
+
+                        // TC 1.3 -  Max string at third position
+                        string maxThirdString = FindMaxString.MaxString("getter", "encapsulation", "set");
+                        Console.WriteLine("{0} is the maximum number at third position", maxThirdString);
+                        break;
+
                     default:
                         Console.WriteLine("Enter valid option.");
                         break;
