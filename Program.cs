@@ -69,29 +69,15 @@ namespace Test_Maximum_Using_Generics
                     case 4:
                         // TC 1.1 - Max int from among three integers
                         int MaxValue1 = MaxValueWithGenerics.MaxValue(43456, 456876, 367654336);
-                        Console.WriteLine("{0} is the maximum number at first position", MaxValue1);
+                        Console.WriteLine("{0} is the maximum number", MaxValue1);
 
                         // TC 1.2 - Max float from among three float numbers
                         float MaxValue2 = MaxValueWithGenerics.MaxValue(234.567f, 5986.0978f, 1254.6758f);
-                        Console.WriteLine("{0} is the maximum float at second position", MaxValue2);
+                        Console.WriteLine("{0} is the maximum float", MaxValue2);
 
                         // TC 1.3 -  Max string from among three strings
                         string MaxValue3 = MaxValueWithGenerics.MaxValue("Programming", "Oriented", "Object");
-                        Console.WriteLine("{0} is the maximum string at third position", MaxValue3);
-                        break;
-
-                    case 5:
-                        // TC 1.1 - Max int from among three integers
-                        int MaxValue4 = MaxGenericClass<int>.MaxValue(43456, 456876, 367654336);
-                        Console.WriteLine("{0} is the maximum number at first position", MaxValue4);
-
-                        // TC 1.2 - Max float from among three float numbers
-                        float MaxValue5 = MaxGenericClass<float>.MaxValue(234.567f, 5986.0978f, 1254.6758f);
-                        Console.WriteLine("{0} is the maximum float at second position", MaxValue5);
-
-                        // TC 1.3 -  Max string from among three strings
-                        string MaxValue6 = MaxGenericClass<string>.MaxValue("Programming", "Oriented", "Object");
-                        Console.WriteLine("{0} is the maximum string at third position", MaxValue6);
+                        Console.WriteLine("{0} is the maximum string", MaxValue3);
                         break;
 
                     case 0:
