@@ -14,7 +14,8 @@ namespace Test_Maximum_Using_Generics
                 Console.WriteLine("1. Find the maximum integer.");
                 Console.WriteLine("2. Find the maximum float.");
                 Console.WriteLine("3. Find the maximum string.");
-                Console.WriteLine("4. Find the maximum value using Generics");
+                Console.WriteLine("4. Find the maximum value using Generics Method");
+                Console.WriteLine("5. Find the maximum value using Generics Class");
                 Console.WriteLine("0. Exit");
                 Console.Write("=> ");
 
@@ -77,6 +78,20 @@ namespace Test_Maximum_Using_Generics
                         // TC 1.3 -  Max string from among three strings
                         string MaxValue3 = MaxValueWithGenerics.MaxValue("Programming", "Oriented", "Object");
                         Console.WriteLine("{0} is the maximum string at third position", MaxValue3);
+                        break;
+
+                    case 5:
+                        // TC 1.1 - Max int from among three integers
+                        int MaxValue4 = MaxGenericClass<int>.MaxValue(43456, 456876, 367654336);
+                        Console.WriteLine("{0} is the maximum number at first position", MaxValue4);
+
+                        // TC 1.2 - Max float from among three float numbers
+                        float MaxValue5 = MaxGenericClass<float>.MaxValue(234.567f, 5986.0978f, 1254.6758f);
+                        Console.WriteLine("{0} is the maximum float at second position", MaxValue5);
+
+                        // TC 1.3 -  Max string from among three strings
+                        string MaxValue6 = MaxGenericClass<string>.MaxValue("Programming", "Oriented", "Object");
+                        Console.WriteLine("{0} is the maximum string at third position", MaxValue6);
                         break;
 
                     case 0:
