@@ -16,6 +16,7 @@ namespace Test_Maximum_Using_Generics
                 Console.WriteLine("3. Find the maximum string.");
                 Console.WriteLine("4. Find the maximum value using Generics Method");
                 Console.WriteLine("5. Find the maximum value using Generics Class");
+                Console.WriteLine("6. Find the maximum value from multiple values using Generic method");
                 Console.WriteLine("0. Exit");
                 Console.Write("=> ");
 
@@ -92,6 +93,18 @@ namespace Test_Maximum_Using_Generics
                         // TC 1.3 -  Max string from among three strings
                         string MaxValue6 = MaxGenericClass<string>.MaxValue("Programming", "Oriented", "Object");
                         Console.WriteLine("{0} is the maximum string", MaxValue6);
+                        break;
+
+                    case 6:
+
+                        int maxInt = FindMoreMaxValues.FindMaximum(12, 23, 34, 45, 56, 67);
+                        Console.WriteLine("Maximum value is {0}", maxInt);
+
+                        float maxFloat = FindMoreMaxValues.FindMaximum(12.34f, 36.46f, 89.12f, 10.001f, 222.123f, 678.876f);
+                        Console.WriteLine("Maximum value is {0}", maxFloat);
+
+                        string maxString = FindMoreMaxValues.FindMaximum("Generics", "ArrayList", "Stack", "Queue", "List", "Array");
+                        Console.WriteLine("Maximum value is {0}", maxString);
                         break;
 
                     case 0:

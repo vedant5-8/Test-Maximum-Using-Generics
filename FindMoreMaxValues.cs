@@ -10,9 +10,8 @@ namespace Test_Maximum_Using_Generics
     internal class FindMoreMaxValues
     {
         // Extend the max method to take more then three parameters
-        static T FindMaximum<T>(params T[] values) where T : IComparable<T>
+        public static T FindMaximum<T>(params T[] values) where T : IComparable<T>
         {
-
             T max = values[0];
 
             for(int i = 1; i < values.Length; i++)
