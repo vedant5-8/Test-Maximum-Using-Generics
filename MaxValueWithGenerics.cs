@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Test_Maximum_Using_Generics
 {
-    internal class MaxValueWithGenerics<T> where T : IComparable<T>
+    internal class MaxValueWithGenerics
     {
-        // Use generic method and find the maximum value
-        public static T MaxValue(T first, T second, T third)
+        // Create generic method and find the maximum value
+        public static T MaxValue<T>(T first, T second, T third) where T : IComparable
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {

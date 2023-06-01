@@ -67,15 +67,15 @@ namespace Test_Maximum_Using_Generics
 
                     case 4:
                         // TC 1.1 - Max int from among three integers
-                        int MaxValue1 = MaxValueWithGenerics<int>.MaxValue(43456, 456876, 367654336);
+                        int MaxValue1 = MaxValueWithGenerics.MaxValue(43456, 456876, 367654336);
                         Console.WriteLine("{0} is the maximum number at first position", MaxValue1);
 
                         // TC 1.2 - Max float from among three float numbers
-                        float MaxValue2 = MaxValueWithGenerics<float>.MaxValue(234.567f, 5986.0978f, 1254.6758f);
+                        float MaxValue2 = MaxValueWithGenerics.MaxValue(234.567f, 5986.0978f, 1254.6758f);
                         Console.WriteLine("{0} is the maximum float at second position", MaxValue2);
 
                         // TC 1.3 -  Max string from among three strings
-                        string MaxValue3 = MaxValueWithGenerics<string>.MaxValue("Programming", "Oriented", "Object");
+                        string MaxValue3 = MaxValueWithGenerics.MaxValue("Programming", "Oriented", "Object");
                         Console.WriteLine("{0} is the maximum string at third position", MaxValue3);
                         break;
 
