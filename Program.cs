@@ -35,6 +35,20 @@ namespace Test_Maximum_Using_Generics
                         Console.WriteLine("{0} is the maximum number at third position", maxThirdInt);
                         break;
 
+                    case 2:
+                        // TC 1.1 - Max Float Number at first position
+                        float maxFirstFloat = FindMaxFloat.MaxFloat(623.4821f, 428.231f, 9.9271f);
+                        Console.WriteLine("{0} is the maximum number at first position", maxFirstFloat);
+
+                        // TC 1.2 - Max Float Number at second position
+                        float maxSecondFloat = FindMaxFloat.MaxFloat(123.1231f, 728.0001f, 555.5555f);
+                        Console.WriteLine("{0} is the maximum number at second position", maxSecondFloat);
+
+                        // TC 1.3 -  Max Float Number at third position
+                        float maxThirdFloat = FindMaxFloat.MaxFloat(10.00001f, 0.51278f, 9287.8310f);
+                        Console.WriteLine("{0} is the maximum number at third position", maxThirdFloat);
+                        break;
+
                     default:
                         Console.WriteLine("Enter valid option.");
                         break;
